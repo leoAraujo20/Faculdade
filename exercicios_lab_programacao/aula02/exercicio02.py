@@ -3,10 +3,12 @@
 # informado é negativo”.
 
 def positive_or_negative(value):
-    if value >= 0:
+    if value > 0:
         print(f"O valor {value} informado é positivo")
-    else:
+    elif value < 0:
         print(f" valor {value} informado é negativo")
+    else:
+        print(f"Valor {value} informado é nulo")
 
 chosen_value = int(input("Chose your number to check: "))
 
