@@ -8,13 +8,15 @@
 def test_average(t1,t2, t3,grade_average_type):
     if grade_average_type == "a":
         average = (t1 + t2 + t3)/3
+    elif grade_average_type == "b":
+        average = (t1 * 5 + t2 * 3 + t3 *2) / 10
     else:
-        average = (t1 * 5 + t2 * 3 + t3 *2) / 9 
+        average = "Average type not exist!"
     return average
 
 test1 = float(input("Test 1: "))
 test2 = float(input("Test 2: "))
 test3 = float(input("Test 3: "))
-grade_type = input("Average type: ").lower()
+grade_type = input("Average type (A or b): ").lower()
 
 print(test_average(test1,test2,test3,grade_type))

@@ -10,7 +10,7 @@ def perfect_value(number):
         if number % i == 0:
             sum += i
     is_perfect = number == sum
-    return f"Is the number perfect ? {is_perfect}"
+    return f"Is the number perfect? {is_perfect}"
 
 print(perfect_value(6))
 
