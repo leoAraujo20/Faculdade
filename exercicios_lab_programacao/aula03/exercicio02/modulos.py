@@ -12,12 +12,12 @@ def menu(cardapio):
     return
 
 def valid_choice(user_order,menu):
-    if 0 <= user_order < len(menu): 
+    if user_order < len(menu) and user_order >= 0:
         return user_order
     else:
         return
 
-def realize_order(choice,menu):
-    if not choice:
-        return 'Choice is not valid'
-    return choice
+def realize_order(quant,price):
+    order_price = price * quant
+    return order_price
+    
