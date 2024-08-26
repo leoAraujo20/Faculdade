@@ -12,7 +12,3 @@ def category(value):
     else:
         return 'D'
     
-def lowest(value, new_value):
-    if value >= new_value:
-        return True
-    return False
