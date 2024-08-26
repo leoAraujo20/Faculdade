@@ -31,3 +31,4 @@ while True:
 print(f"Quantidade de viagens do ônibus 'A':{quant_viagem_a}")
 print(f"Ônibus com mais passageiros {maior}")
 print(f"Quantidades de passageiros que viajaram no ônibus B em 23/12/22: {quantidade_data_especifica}")
+# sfsf
