@@ -4,6 +4,7 @@ min_salary = float(input('Enter the minimum wage: '))
 total_expenses = 0
 least_sales = 10000000000000
 least_sales_seller = None
+
 while True:
     seller = input("Name of the seller ([L]eave): ").upper()
     if seller == 'L':
