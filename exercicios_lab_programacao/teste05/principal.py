@@ -4,8 +4,9 @@ salarios = []
 colaboradores = []
 gastos_totais = 0
 abono_200 = 0
+
 while True:
-    nome_colaborador = input('Digitar nome do colaborador: ')
+    nome_colaborador = input('Digitar nome do colaborador ("SAIR" para enecerrar): ')
     
     if nome_colaborador =='SAIR':
         break
@@ -32,7 +33,7 @@ for i in range(len(colaboradores)):
 print('-------------------------------------')
 print(f'Total(Salarios + abonos): R$:{gastos_totais}')
 print(f'Foram processados {quant_colaboradores} colaboradores')
-print(f'Valor mínimo paga a {abono_200} colaborador(es)')
+print(f'Valor mínimo pago a {abono_200} colaborador(es)')
 
 
     
