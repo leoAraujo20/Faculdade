@@ -30,7 +30,7 @@ print('PROJEÇÃO DE GASTOS COM ABONOS!')
 print('===============================')
 for i in range(len(colaboradores)):
     print(f'{colaboradores[i]} -> Total: R${salarios[i]}')
-print('-------------------------------------')
+print('--------------------------------')
 print(f'Total(Salarios + abonos): R$:{gastos_totais}')
 print(f'Foram processados {quant_colaboradores} colaboradores')
 print(f'Valor mínimo pago a {abono_200} colaborador(es)')
