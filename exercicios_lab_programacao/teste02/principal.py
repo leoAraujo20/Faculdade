@@ -39,7 +39,7 @@ for status in situacoes:
 print()
 print('Escola Privamera - Gestão de Alunos')
 print('----------------------------')
-for i in range(len(alunos)- 1):
+for i in range(len(alunos) - 1):
     print(f'{alunos[i]} - {situacoes[i]}')
 
 print()
