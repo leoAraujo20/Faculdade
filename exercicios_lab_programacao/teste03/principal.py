@@ -22,12 +22,13 @@ while True:
         print()
         posicao_livro = int(input('Digitar posiçõão do livro para excluir: '))
         
-        if not modulos.remove_livro(livros, posicao_livro):
+        if not modulos.verifiva_livro(livros, posicao_livro):
             print()
             print('Ocorreu um erro!')
             print()
             continue
         
+        modulos.remove_livro(livros, posicao_livro)
         print('Livro removido com sucesso!')
     
     elif escolha == '4':
@@ -36,12 +37,13 @@ while True:
         posicao_modificar = int(input('Digitar posiçõão do livro para modificar: '))
         novo_nome = input("Digite o novo nome para o livro: ")
         
-        if not modulos.modifica_livro(livros, posicao_modificar, novo_nome):
+        if not modulos.verifiva_livro(livros, posicao_modificar):
             print()
             print('Ocorreu um erro!')
             print()
             continue
 
+        modulos.modifica_livro(livros, posicao_modificar, novo_nome)
         print('Livro modificado com sucesso!')
         print()    
     
@@ -52,7 +54,6 @@ while True:
         print()
         print('Escolha inválida')
         print()
-        continue
 
         
 
