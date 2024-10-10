@@ -3,10 +3,10 @@ def somaValores(lista):
 
 def menorValor(lista:list):
     menor = lista[0]
-    for valor in lista:
-        if valor < menor:
-            menor = lista[0]
-        return menor
+    for i in range(len(lista)):
+        if lista[i] <= menor:
+            menor = lista[i]
+    return menor
 
 def quantidade(lista: list, valor):
     quant_valor = lista.count(valor)

@@ -1,6 +1,6 @@
 from provaG1 import *
 
-lista= [12, 34, 21, 34, 13, 65, 21, 12, 13, 34, 21, 12, 12, 65, 57, 12]
+lista= [12, 0, 34, 21, 34, 13, 65, 21, 12, 13, 34, 21, 12, 12, 65, 57, 12]
 
 #somaValores: 0,5
 print('A soma dos valores da lista é:', somaValores(lista))
